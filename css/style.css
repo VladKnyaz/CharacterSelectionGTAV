@@ -1,0 +1,211 @@
+body {
+  background: url('../img/bg.svg');
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  min-width: 0;
+}
+.slider {
+  min-width: 0;
+  margin: 20px auto;
+}
+.btnArrows {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 35px;
+  margin-left: 30px;
+  display: flex;
+}
+.btnArrows span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  width: 100px;
+
+  color: #ffffff;
+}
+.btnArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: #000000;
+  box-shadow: 0px 4px 4px #bf127d;
+  border-radius: 5px 0px;
+  margin-right: 10px;
+}
+.nextArrow img {
+  transform: rotate(180deg);
+}
+.slick-slide {
+  opacity: 0.6;
+  transform: scale(0.9);
+  transition: all 0.2s;
+}
+
+.slick-slide.slick-center {
+  transform: scale(1);
+  opacity: 1;
+}
+.block {
+  position: relative;
+  outline: none;
+  margin-right: 100px;
+  min-width: 0;
+  width: 420px;
+  height: 573px;
+}
+.block .top {
+  position: relative;
+  height: 121px;
+  background: linear-gradient(90deg, #bf127d 0%, #df6f67 100%);
+  border-radius: 50px 0px 0px 0px;
+}
+.person {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  margin-top: -36px;
+  z-index: 9;
+}
+
+.block .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 50px 0px;
+  height: 451px;
+}
+.namePers {
+  margin: 30px 0;
+}
+.blockInfoPers {
+  width: 309px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 29px;
+  font-weight: normal;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  margin-bottom: 16px;
+}
+.blockInfoPers:last-child {
+  margin: 0;
+}
+.chooseBtn {
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 278px;
+  height: 44px;
+  font-weight: 600;
+  background: linear-gradient(90deg, #bf127d 0%, #df6f67 100%);
+  box-shadow: 1px 4px 4px rgba(191, 18, 125, 0.5);
+  border-radius: 60px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.chooseBtn:hover {
+  width: 283px;
+  height: 49px;
+  font-size: 25px;
+}
+/* Создание ПЕРСОНАЖА */
+
+.topAddPers {
+  position: relative;
+  height: 121px;
+  border-radius: 50px 0px 0px 0px;
+  background-image: linear-gradient(
+      90deg,
+      rgba(191, 18, 125, 0.5) 0%,
+      rgba(223, 111, 103, 0.5) 100%
+    ),
+    url('../img/bgPers.jpg');
+  background-position: top;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+}
+.plusPersIcon {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: 96px;
+  height: 96px;
+  background: linear-gradient(90deg, #bf127d 0%, #df6f67 100%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  z-index: 9;
+}
+.bottomAdd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 451px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 50px 0px;
+}
+.infoSlot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 98px;
+  color: #fff;
+  font-size: 32px;
+}
+.textCreatePers {
+  position: relative;
+  background: url('../img/msg.svg');
+  width: 231px;
+  height: 110px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 55px;
+}
+.textCreatePers span {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 15px;
+}
+.plusIcon {
+  margin-top: -30px;
+  transition: 0.2s;
+}
+.plusIcon:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

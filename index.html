@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Выбор персонажа</title>
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="btnArrows">
+        <div class="btnArrow prevArrow"><img src="img/arrowLeft.svg" alt="" /></div>
+        <div class="btnArrow nextArrow"><img src="img/arrowLeft.svg" alt="" /></div>
+        <span>Управление выбором</span>
+      </div>
+      <div class="slider">
+        <div class="block">
+          <div class="top">
+            <img src="img/pers.svg" alt="" class="person" />
+          </div>
+          <div class="bottom">
+            <div class="namePers">Artem Rovin</div>
+
+            <div class="blockInfoPers playHours">
+              <span>Наиграно часов:</span> <strong>228ч</strong>
+            </div>
+            <div class="blockInfoPers"><span>Фракция:</span> <strong>нет</strong></div>
+            <div class="blockInfoPers"><span>Наличные:</span> <strong>$20 000</strong></div>
+            <div class="blockInfoPers"><span>Банк:</span> <strong>$50 000</strong></div>
+            <button class="chooseBtn">Выбрать</button>
+          </div>
+        </div>
+        <div class="block">
+          <div class="topAddPers">
+            <div class="plusPersIcon"><img src="img/plusPers.svg" alt="" /></div>
+          </div>
+          <div class="bottomAdd">
+            <div class="infoSlot">
+              <span>Слот <strong>№2</strong></span>
+              <span>свободен</span>
+            </div>
+            <div class="textCreatePers"><span>Нажмите чтобы создать нового персонажа</span></div>
+            <img src="img/plus.svg" alt="" class="plusIcon" />
+          </div>
+        </div>
+        <div class="block">
+          <div class="topAddPers">
+            <div class="plusPersIcon"><img src="img/plusPers.svg" alt="" /></div>
+          </div>
+          <div class="bottomAdd">
+            <div class="infoSlot">
+              <span>Слот <strong>№2</strong></span>
+              <span>свободен</span>
+            </div>
+            <div class="textCreatePers"><span>Нажмите чтобы создать нового персонажа</span></div>
+            <img src="img/plus.svg" alt="" class="plusIcon" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
